@@ -3,10 +3,12 @@
 
 
 def DNA_strand(dna):
+    # a dict is needed to hold the keys and values for ref later
     d_strand = {
         "A": "T",
         "T": "A",
         "C": "G",
         "G": "C",
     }
+    # on return as we loop thru the strand we join the keys to the values
     return ''.join([d_strand[s] for s in dna])
